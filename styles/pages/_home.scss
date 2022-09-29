@@ -93,6 +93,7 @@ main {
 .travel {
   @extend .content-width;
   @extend .mb-lg;
+  padding-top: $navHeight;
 
   &__inner {
     position: relative;
@@ -288,6 +289,7 @@ footer {
 
   &__ul {
     @extend .flex;
+    text-align: center;
     list-style: none;
     padding: 0;
   }
@@ -387,7 +389,7 @@ footer {
   }
 
   &.twitter::before {
-    background-image: url(../../images/twitter.svg);
+    background-image: url(../images/twitter.svg);
   }
   &.github::before {
     background-image: url(../images/github.svg);
