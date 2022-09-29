@@ -1,7 +1,8 @@
 @use "../globals" as *;
 
 body {
-  font-family: "Kameron", "Noto Sans JP", sans-serif;
+  font-family: "Didact Gothic", "Noto Sans JP", sans-serif;
+  background-color: $cNavy;
 }
 
 img {
@@ -50,7 +51,7 @@ img {
 }
 
 .purple {
-  color: $cWineRed;
+  color: $cWhite;
 }
 
 #main-content {
@@ -98,5 +99,5 @@ img {
 .sub-title {
   @extend .font-sm;
   @extend .mb-sm;
-  color: $cSubTitle;
+  color: $cGray;
 }
