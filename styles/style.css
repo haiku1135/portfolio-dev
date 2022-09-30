@@ -245,7 +245,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, calc(-50% + 20px));
-  color: #FFF;
+  color: #57BDFC;
+  background-color: rgba(184, 184, 185, 0.5);
+  border: solid 1px #b8b8b9;
   font-size: 25px;
   z-index: 2;
   opacity: 0;
@@ -716,7 +718,7 @@
 
 body {
   font-family: "Didact Gothic", "Noto Sans JP", sans-serif;
-  background-color: #313175;
+  background-color: #1f1e3b;
 }
 
 img {
@@ -820,13 +822,14 @@ img {
 }
 
 .sub-title {
-  color: #B8B8B9;
+  color: #b8b8b9;
 }
 
 #main-content {
   position: relative;
   z-index: 0;
-  background-color: #313175;
+  background-color: #1f1e3b;
+  color: #FFF;
 }
 
 main {
@@ -847,7 +850,7 @@ main {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: #313175;
+  background-color: #1f1e3b;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -911,7 +914,7 @@ main {
   position: relative;
   z-index: 0;
   justify-content: space-between;
-  background: #eaebe6;
+  background: #323273;
   padding: 15px;
 }
 @media screen and (min-width: 600px) {
@@ -992,6 +995,9 @@ main {
   .travel__title::before {
     display: block;
   }
+}
+.travel__description {
+  color: #FFF;
 }
 @media screen and (min-width: 960px) {
   .travel__description {
@@ -1105,7 +1111,7 @@ footer {
   }
 }
 .footer__li > a {
-  color: #313175;
+  color: #1f1e3b;
   text-decoration: none;
 }
 .footer > .logo {
