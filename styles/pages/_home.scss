@@ -212,7 +212,8 @@ main {
   @extend .mb-lg;
 
   &__inner {
-    @extend .flex;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__title {
@@ -221,18 +222,79 @@ main {
   }
 
   &__item {
+    border-radius: 50%;
+    background: $cGray;
+    width: 45%;
     @include mq(md) {
       flex-basis: 50%;
     }
     @include mq(lg) {
       margin-bottom: 60px;
     }
+
+    & img {
+      background-image: cover;
+    }
+  }
+}
+
+
+.experience {
+  @extend .content-width;
+  @extend .mb-lg;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    @include mq(md) {
+      flex-basis: 50%;
+    }
+    @include mq(lg) {
+      justify-content: space-between;
+    }
   }
 
-  &__btn {
-    text-align: center;
-    flex-basis: 100%;
+  &__title {
+    @extend .mb-sm;
+    @extend .font-lr;
+  }
 
+  &__item {
+    width:240px;
+    height: 240px;
+    background-color: $cGray;
+    border-radius: 50%;
+    position:relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    & .mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: all 0.2s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        & .caption {
+          font-size:200%;
+          text-align: center;
+          padding-top: 95px;
+          color: $cWhite;
+        }
+      }
+    & img {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -260,6 +322,9 @@ main {
   }
 
   &__item {
+    &:hover{
+      transform: translateY(-2px) scale(1.02) !important;
+    }
     @include mq(md) {
       flex-basis: 47%;
     }
