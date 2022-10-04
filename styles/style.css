@@ -730,11 +730,11 @@ img {
   margin-bottom: 16px !important;
 }
 
-.mb-lg, .travel, .houses, .popular__btn {
+.mb-lg, .travel, .houses {
   margin-bottom: 80px !important;
 }
 @media screen and (min-width: 960px) {
-  .mb-lg, .travel, .houses, .popular__btn {
+  .mb-lg, .travel, .houses {
     margin-bottom: 150px !important;
   }
 }
@@ -823,6 +823,10 @@ img {
 
 .sub-title {
   color: #b8b8b9;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 #main-content {
@@ -1039,15 +1043,23 @@ main {
 
 .popular {
   position: relative;
+  margin-bottom: 2rem;
 }
 .popular__header {
   position: relative;
   z-index: 2;
 }
 .popular__container {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   z-index: 2;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .popular__container {
+    grid-template-columns: none;
+  }
 }
 @media screen and (min-width: 600px) {
   .popular__item {
@@ -1064,24 +1076,31 @@ main {
     flex-basis: 23%;
   }
 }
+.popular__item a {
+  display: block;
+  border-radius: 26px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.popular__item a.twitter {
+  background: linear-gradient(144deg, #84d0ff, #19a7ff 50%, #1da1f2 60%, #1a7ee9);
+}
+.popular__item a.email {
+  background: linear-gradient(144deg, #f7e9d2, #f7bd57 50%, #f1af59 60%, #feae2d);
+}
+.popular__item a.github {
+  background: linear-gradient(144deg, #fff, #c3cbff 60%, #af99ff);
+}
 .popular__img {
-  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
   margin-bottom: 5px;
 }
-@media screen and (min-width: 960px) {
-  .popular__img {
-    height: 335px;
-  }
-}
 .popular__img > img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.popular__btn {
-  text-align: center;
-  flex-basis: 100%;
+  width: 150px;
 }
 
 footer {
@@ -1192,4 +1211,11 @@ footer {
 }
 .icon.github::before {
   background-image: url(../images/github.svg);
+}
+
+#about::before, #experience::before, #portfolio::before, #contact::before {
+  display: block;
+  height: 7rem;
+  margin-top: -10rem;
+  content: "";
 }/*# sourceMappingURL=style.css.map */

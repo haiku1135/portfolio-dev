@@ -42,11 +42,11 @@
           </div>
           <nav class="header__nav">
             <ul class="header__ul">
-              <li class="header__li item"><a href="#">Home</a></li>
-              <li class="header__li item"><a href="#">About</a></li>
-              <li class="header__li item"><a href="#">Experience</a></li>
-              <li class="header__li item"><a href="#">Portfolio</a></li>
-              <li class="header__li item"><a class="btn filled" href="#">Contact</a></li>
+              <li class="header__li item"><a href="#home">Home</a></li>
+              <li class="header__li item"><a href="#about">About</a></li>
+              <li class="header__li item"><a href="#experience">Experience</a></li>
+              <li class="header__li item"><a href="#portfolio">Portfolio</a></li>
+              <li class="header__li item"><a class="btn filled" href="#contact">Contact</a></li>
             </ul>
           </nav>
           <button class="mobile-menu__btn">
@@ -67,7 +67,7 @@
             </div>
           </aside>
           <main>
-            <section class="travel">
+            <section class="travel" id="home">
               <div class="travel__inner">
                 <div class="travel__img cover-slide">
                   <img class="img-zoom" src="images/image-travel.jpg" />
@@ -95,7 +95,7 @@
                 </div>
               </div>
             </section>
-            <section class="houses">
+            <section class="houses" id="about">
               <div>
                 <h2 class="main-title tween-animate-title">About me</h2>
                 <p class="sub-title tween-animate-title">私について</p>
@@ -137,12 +137,9 @@
                   </div>
                   <p class="houses__title">House 6</p>
                 </div>
-                <div class="houses__btn appear up">
-                  <button class="btn slide-bg item">もっと詳しく</button>
-                </div>
               </div>
             </section>
-            <section class="houses">
+            <section class="houses" id="experience">
               <div>
                 <h2 class="main-title tween-animate-title">Experience</h2>
                 <p class="sub-title tween-animate-title">持っているスキル・経験</p>
@@ -184,12 +181,9 @@
                   </div>
                   <p class="houses__title">House 6</p>
                 </div>
-                <div class="houses__btn appear up">
-                  <button class="btn slide-bg item">もっと詳しく</button>
-                </div>
               </div>
             </section>
-            <section class="hero-contents">
+            <section class="hero-contents" id="portfolio">
               <div class="hero-main-title">
                 <h2 class="main-title tween-animate-title">Portfolio</h2>
                 <p class="sub-title tween-animate-title">ポートフォリオ</p>
@@ -209,36 +203,33 @@
                 </div>
               </div>
             </section>
-            <section class="popular">
+            <section class="popular" id="contact">
               <div class="popular__header">
                 <h2 class="main-title tween-animate-title">Contact</h2>
                 <p class="sub-title tween-animate-title">お問合わせ</p>
               </div>
               <div class="popular__inner appear up">
                 <div class="popular__container">
-                  <div class="popular__item item">
-                    <div class="popular__img">
-                      <img src="images/image-p1.jpg" />
-                    </div>
-                    <p class="popular__title">パリ</p>
+                  <div class="popular__item item email">
+                    <a href="mailto:haiku1135&#64;gmail.com" class="email" target="_blank" rel="noopener noreferrer">
+                      <div class="popular__img">
+                        <img src="images/mail.svg" />
+                      </div>
+                    </a>
                   </div>
                   <div class="popular__item item">
-                    <div class="popular__img">
-                      <img src="images/image-p2.jpg" />
-                    </div>
-                    <p class="popular__title">ニューヨーク</p>
+                    <a href="https://twitter.com/haiku1135" class="twitter" target="_blank" rel="noopener noreferrer">
+                      <div class="popular__img">
+                        <img src="images/twitter_white.svg" />
+                      </div>
+                    </a>
                   </div>
-                  <div class="popular__item item">
-                    <div class="popular__img">
-                      <img src="images/image-p3.jpg" />
-                    </div>
-                    <p class="popular__title">香港</p>
-                  </div>
-                  <div class="popular__item item">
-                    <div class="popular__img">
-                      <img src="images/image-p4.jpg" />
-                    </div>
-                    <p class="popular__title">大阪</p>
+                  <div class="popular__item item github">
+                    <a href="https://github.com/haiku1135" class="github" target="_blank" rel="noopener noreferrer">
+                      <div class="popular__img">
+                        <img src="images/github_black.svg" />
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -258,33 +249,33 @@
       </div>
       <ul class="mobile-menu__main">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+          <a class="mobile-menu__link" href="#home">
             <span class="main-title">Home</span>
             <span class="sub-title">ホーム</span>
           </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+          <a class="mobile-menu__link" href="#about">
             <span class="main-title">About me</span>
             <span class="sub-title">私について</span>
           </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
+          <a class="mobile-menu__link" href="#experience">
             <span class="main-title">Experience</span>
             <span class="sub-title">持っているスキル・経験</span>
           </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
-            <span class="main-title">Contact</span>
-            <span class="sub-title">コンタクト</span>
+          <a class="mobile-menu__link" href="#portfolio">
+            <span class="main-title">Portfolio</span>
+            <span class="sub-title">ポートフォリオ</span>
           </a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="#">
-            <span class="main-title">Portfolio</span>
-            <span class="sub-title">ポートフォリオ</span>
+          <a class="mobile-menu__link" href="#contact">
+            <span class="main-title">Contact</span>
+            <span class="sub-title">コンタクト</span>
           </a>
         </li>
       </ul>
@@ -296,11 +287,11 @@
         </div>
         <nav class="footer__nav">
           <ul class="footer__ul">
-            <li class="footer__li item"><a href="#">Home</a></li>
-            <li class="footer__li item"><a href="#">About</a></li>
-            <li class="footer__li item"><a href="#">Experience</a></li>
-            <li class="footer__li item"><a href="#">Portfolio</a></li>
-            <li class="footer__li item"><a href="#">Contact</a></li>
+            <li class="footer__li item"><a href="#home">Home</a></li>
+            <li class="footer__li item"><a href="#about">About</a></li>
+            <li class="footer__li item"><a href="#experience">Experience</a></li>
+            <li class="footer__li item"><a href="#portfolio">Portfolio</a></li>
+            <li class="footer__li item"><a href="#contact">Contact</a></li>
           </ul>
           <div class="footer__copyright item">
             &copy; takumi takahashi
