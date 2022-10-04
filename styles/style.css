@@ -954,6 +954,14 @@ main {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
+.travel__texts a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+}
+.travel__texts a:hover {
+  color: #252342;
+}
 .travel__img {
   height: 300px;
   transition: box-shadow 1s ease 1.6s;
