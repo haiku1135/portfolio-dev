@@ -129,6 +129,7 @@ main {
     &.inview {
       & .travel__title::before {
         @include animation($name: scaleX, $duration: 0.3s, $delay: 1.5s);
+        background-color: $cBlue;
       }
     }
 
@@ -228,7 +229,7 @@ main {
   &__contents {
     @include mq(lg){
       width: 50%;
-      
+
       & h2 {
         font-size: 2rem;
       }

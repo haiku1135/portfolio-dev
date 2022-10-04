@@ -953,6 +953,7 @@ main {
           animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  background-color: #57BDFC;
 }
 .travel__texts a {
   display: block;
