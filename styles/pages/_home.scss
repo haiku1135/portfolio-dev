@@ -207,7 +207,7 @@ main {
   }
 }
 
-.houses {
+.about {
   @extend .content-width;
   @extend .mb-lg;
 
@@ -215,26 +215,29 @@ main {
     display: flex;
     flex-wrap: wrap;
   }
+  
+  &__img {
+    margin-bottom: 2rem;
+    @include mq(lg){
+      width: 40%;
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__contents {
+    @include mq(lg){
+      width: 50%;
+      
+      & h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 
   &__title {
     @extend .mb-sm;
     @extend .font-lr;
-  }
-
-  &__item {
-    border-radius: 50%;
-    background: $cGray;
-    width: 45%;
-    @include mq(md) {
-      flex-basis: 50%;
-    }
-    @include mq(lg) {
-      margin-bottom: 60px;
-    }
-
-    & img {
-      background-image: cover;
-    }
   }
 }
 
