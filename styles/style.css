@@ -1102,10 +1102,16 @@ main {
   opacity: 1;
 }
 .experience__item .mask .caption {
-  font-size: 200%;
+  font-size: 125%;
   text-align: center;
-  padding-top: 95px;
+  padding-top: 55px;
   color: #FFF;
+}
+@media screen and (min-width: 600px) {
+  .experience__item .mask .caption {
+    font-size: 200%;
+    padding-top: 95px;
+  }
 }
 .experience__item img {
   margin: 0 auto;

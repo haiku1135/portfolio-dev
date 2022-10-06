@@ -294,10 +294,15 @@ main {
         }
 
         & .caption {
-          font-size:200%;
+          font-size: 125%;
           text-align: center;
-          padding-top: 95px;
+          padding-top: 55px;
           color: $cWhite;
+
+          @include mq(md) {
+          font-size:200%;
+          padding-top: 95px;
+          }
         }
       }
     & img {
