@@ -250,11 +250,12 @@ main {
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+
     @include mq(md) {
       flex-basis: 50%;
+      margin: 0 auto;
     }
     @include mq(lg) {
       justify-content: space-between;
@@ -267,8 +268,11 @@ main {
   }
 
   &__item {
-    width:240px;
-    height: 240px;
+    width: 45%;
+    @include mq(md) {
+      width:240px;
+      height: 240px;
+    }
     background-color: $cGray;
     border-radius: 50%;
     position:relative;
@@ -353,7 +357,7 @@ main {
         background:linear-gradient(144deg,#f7e9d2,#f7bd57 50%, #f1af59 60%,#feae2d);
       }
       &.github {
-        background: linear-gradient(144deg,#fff,#c3cbff 60%,#af99ff);
+        background: linear-gradient(144deg,#fff,#c3cbff 60%,#8071b7);
       }
 
     }
