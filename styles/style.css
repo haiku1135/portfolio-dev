@@ -206,6 +206,11 @@
   height: 500px;
   overflow: hidden;
 }
+.swiper-slide .hero__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #57BDFC;
+}
 @media screen and (min-width: 960px) {
   .swiper-slide {
     box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
